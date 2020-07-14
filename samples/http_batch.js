@@ -8,11 +8,11 @@ export default function() {
   ]);
 
   check(responses[0], {
-    "main page 200": res => res.status === 200,
+    "main page 200": res => res.status === 300,
   });
 
   check(responses[1], {
-    "pi page 200": res => res.status === 200,
+    "pi page 200": res => res.status === 300,
     "pi page has right content": res => res.body === "3.14",
   });
 };
